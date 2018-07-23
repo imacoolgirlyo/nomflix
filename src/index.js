@@ -1,5 +1,16 @@
-import "something.css";
+import "./css/style.css";
 
-const plus = (a =0 , b =7) => a + b;
-console.log("awesome");
-plus(1,1);
+const navigation = document.querySelector('nav');
+const SCROLLED = "scrolled";
+
+
+const navigationScroll = () => {
+    if(window.scrollY > 400) {
+        navigation.classList.add(SCROLLED);
+    }else {
+        navigation.classList.remove(SCROLLED);
+    }
+    
+}
+
+window.addEventListener("scroll", navigationScroll);
