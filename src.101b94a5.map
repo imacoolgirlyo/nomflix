@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":["document","querySelector","innerHTML"],"mappings":";AAAAA,SAASC,cAAc,QAAQC,UAAY","file":"src.101b94a5.map","sourceRoot":"../src","sourcesContent":["document.querySelector(\"body\").innerHTML = 'hi';"]}
