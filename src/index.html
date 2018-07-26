@@ -4,11 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Netflix</title>
+    <title>Nomflix</title>
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head>
 <body>
-    <script src="index.js"></script>
+    <nav class= "list">
+       
+        <ul class= "list__header">
+             <li class = "list__logo">
+                <a href='#'> <img class="logo" src= './img/logo.png'/></a>
+             </li>
+            <li class ="list__content">
+                    <a href='#' class= "header__link"> 홈 </a>
+            </li>
+            <li class = "list__content">
+                    <a href='#' class= "header__link"> TV 프로그램 </a>
+            </li>
+            <li class = "list__content">
+                    <a href='#' class= "header__link"> 영화 </a>
+            </li>
+            <li class = "list__content">
+                    <a href='#' class= "header__link"> 최근 등록 콘텐츠 </a>
+            </li>
+            <li class = "list__content">
+                    <a href='#' class= "header__link"> 내가 찜한 콘텐츠 </a>
+            </li> 
+        </ul>
+        <ul class= "list__header">
+            <li class = "list__content-right">
+                    <a href='#' class= "header__link icon">  <i class="fas fa-search"></i></a>
+            </li>
+            <li class = "list__content-right">
+                    <a href='#' class= "header__link icon">  <i class="fas fa-bell"></i></a>
+            </li>
+            <li class = "list__content-right">
+                    <a href='#' class= "header__link icon">  <i class="fas fa-caret-down"></i></a>
+            </li>
+       </ul>
+    </nav>
+   <div class= "video__wrap">
+
+        
+        <video class="video js-video" src= "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                <!-- <source src="https://serranoarevalo.github.io/nomflix/9bfd1023900e31286103369c803c7ee9.ogv"/> -->
+        </video>
+        <div class= "video__play-btn js-play" > <i class="fas fa-play"></i> <span>일시정지</span>  </div>
+        <div class= "video__volume-btn js-volume"><i class="fas fa-volume-off"></i></div>
+        
+        
+    </div>
+<script src="./index.js" ></script>
 </body>
 
 </html>
