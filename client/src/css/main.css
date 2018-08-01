@@ -1,11 +1,17 @@
 body{
     height: 1000vh;
+    background-color:#141414;
 }
 
+.site__header{
+    position : fixed;
+    width: 100%;
+    z-index: 10;
+}
 
 nav {
-    position : fixed;
-    width : 100%;
+    
+    width: 100%;
     height: 70px;
     background-color: transparent;
     
@@ -56,7 +62,7 @@ nav {
 }
 
 .video{
-    position: relative;
+    top: -20px;
     z-index: -1;
     width: 100%;
     
@@ -67,18 +73,50 @@ nav {
     
 }
 
-
-.video__play-btn{
+.video__wrap{
     position: relative;
-    left: 100px;
-    float: left;
+}
+
+.video__Btn{
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    
+}
+
+.video__Btn:last-child{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 10%;
+    top: 70%;
+    right: 0;
+}
+.video__play-btn{
+    left: 0;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
     background-color: rgba(10, 31, 36, 0.068);
     border-radius: 3px;
-    padding: 15px 35px;
+    padding: 15px ;
     color: white;
-    font-size: 15px;
+    font-size: 10px;
+    
+}
+
+.video__volume-btn {
+    background-color: transparent;
+    font-size: 20px;
+    border: transparent;
+    color: white;
+    
+}
+
+.maturity__rating{
+    background-color:rgba(2, 6, 7, 0.466);
+    padding: 7px 45px 7px 6px;
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
 }

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head>
 <body>
+<header class= "site__header">
+
     <nav class= "list">
        
         <ul class= "list__header">
@@ -42,18 +44,26 @@
                     <a href='#' class= "header__link icon">  <i class="fas fa-caret-down"></i></a>
             </li>
        </ul>
+
     </nav>
+ </header>
+
    <div class= "video__wrap">
 
+        <div class= "video__Btn">
+                <button class= "video__play-btn js-play" > <span> 정지 </span>  </button>
+       </div>
+         <video class="video js-video" src= "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+         </video>
+
+        <div class="video__Btn">
+                <button class= "video__volume-btn js-volume"><i class="fas fa-volume-off"></i></button>
+                <div class = "maturity__rating"> 15 </div>
+        </div>
+    </div>       
         
-        <video class="video js-video" src= "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-                <!-- <source src="https://serranoarevalo.github.io/nomflix/9bfd1023900e31286103369c803c7ee9.ogv"/> -->
-        </video>
-        <div class= "video__play-btn js-play" > <i class="fas fa-play"></i> <span>일시정지</span>  </div>
-        <div class= "video__volume-btn js-volume"><i class="fas fa-volume-off"></i></div>
         
-        
-    </div>
+    
 <script src="./index.js" ></script>
 </body>
 

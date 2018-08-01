@@ -1,3 +1,4 @@
+
 const navigation = document.querySelector('nav'),
     SCROLLED = "scrolled",
     video = document.querySelector('.js-video'),
@@ -7,7 +8,7 @@ const navigation = document.querySelector('nav'),
 
 
 const navigationScroll = () => {
-    if(window.scrollY > 400) {
+    if(window.scrollY > 200) {
         navigation.classList.add(SCROLLED);
     }else {
         navigation.classList.remove(SCROLLED);
@@ -21,6 +22,7 @@ video.autoplay = true;
 video.muted = true;
 
 const videoPlayControl = () =>{
+    
     if(video.paused){
         video.play();
         videoPlayBtn.innerHTML = "일시정지"
@@ -30,9 +32,7 @@ const videoPlayControl = () =>{
         videoPlayBtn.innerHTML = "재생"
     }
 }
-
 const videoVolumeControl = () => {
-    console.log("volume on")
     if(video.muted){
         video.muted = false;
     }else {
