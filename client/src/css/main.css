@@ -120,3 +120,81 @@ nav {
     font-weight: 200;
     font-size: 12px;
 }
+
+.carousel{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.carousel__header{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel__header:hover .angle-right{
+    color:white;
+}
+.header__sub-text{
+    position: absolute;
+    margin-left: 90px;
+    padding-left: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #141414;
+    transition: all 1s ease-out;
+}
+
+.carousel__header:hover .header__sub-text{
+    transform : translateX(2em);
+    color: white;
+}
+
+
+.angle-right{
+    color: #141414;
+    margin-left: 10px;
+}
+
+
+
+.carousel__main{
+    margin-top: 10px;
+    display: flex;
+    transition: transform 0.2s linear, opacity 0.2s linear;
+    
+}
+
+.carousel__main:hover{
+    transform : traslateX(-32px);
+}
+
+.carousel__main:hover .item:hover {
+    opacity: 1;
+}
+
+.carousel__main:hover .item{
+    opacity: 0.5;
+}
+
+.item {
+    margin-right: 3px;
+    width: 210px;
+    height: 390px;
+    
+    transition: transform 0.2s linear, opacity 0.2s linear;
+}
+
+.item:hover ~ .item{
+    transform: translate(32px);
+}
+
+.item:hover{
+    transform : scale(1.2);
+}
+
+.img{
+    width: 100%;
+}
